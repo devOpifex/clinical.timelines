@@ -15,5 +15,20 @@ library(clinical.timelines)
 data <- read.csv("https://raw.githubusercontent.com/RhoInc/data-library/master/data/clinical-trials/renderer-specific/adtimelines.csv")
 
 clinical_timeline(data)
+
+# groupings
+data |> 
+  clinical_timeline(data) |> 
+  clinical_settings(
+    groupings = list("ARM", "SITEID"), 
+    grouping_initial = "ARM"
+  ) 
+
+# time_scale
+data |> 
+  clinical_timeline(data) |> 
+  clinical_settings(
+    time_scale = "day"
+  ) 
 ```
 
