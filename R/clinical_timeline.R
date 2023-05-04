@@ -12,8 +12,7 @@
 clinical_timeline <- function(data, width = NULL, height = NULL, elementId = NULL) {
 
   x = list(
-    data = data,
-    settings = list()
+    data = data
   )
 
   attr(x, 'TOJSON_ARGS') <- list(dataframe = "rows")

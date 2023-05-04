@@ -11,10 +11,8 @@ HTMLWidgets.widget({
     return {
 
       renderValue: function(x) {
-        console.log(x);
-
-        instance = clinicalTimelines('#' + el.id, {}).init(x.data);
-
+        x.settings = x.settings || {};
+        instance = clinicalTimelines('#' + el.id, x.settings).init(x.data);
       },
 
       resize: function(width, height) {
