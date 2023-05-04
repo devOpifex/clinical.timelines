@@ -1,0 +1,14 @@
+dependencies:
+ - name: d3
+   version: 3.5.1
+   src: htmlwidgets/lib/d3
+   script: index.min.js
+ - name: webcharts
+   version: 1.11.6
+   src: htmlwidgets/lib/webcharts
+   script: index.js
+   stylesheet: style.css
+ - name: "clinical-timelines"
+   version: 1.5.2
+   src: htmlwidgets/lib/clinical-timelines
+   script: index.js

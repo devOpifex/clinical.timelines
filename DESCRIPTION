@@ -1,0 +1,20 @@
+Package: clinical.timelines
+Title: Clinical Timelines Visualisation
+Version: 0.0.0.9000
+Authors@R: 
+    c(
+        person(family = "Bristol Myers Squibb",
+           role = c("cph", "fnd")),
+        person(given = "John",
+           family = "Coene",
+           role = c("aut", "cre"),
+           email = "john@opifex.org")
+    )
+Description: 'htmlwidget' to create 'Clinical Timelines'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports:
+  htmlwidgets
+
